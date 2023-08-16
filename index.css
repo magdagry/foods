@@ -11,7 +11,7 @@
     --main-color: #ff702a;
     --text-color: #fff;
     --bcg-color: #1e1c2a;
-    --bog-font: 2rem;
+    --big-font: 5rem;
     --h2-font: 2.25rem;
     --p-font: 0.9rem;
 }
@@ -89,4 +89,46 @@ color: var(--main-color);
     background: var(--main-color);
     color: #fff;
     border-radius: 0.5rem;
+}
+.btn:hover {
+    transform: scale(1.2) translateY(10px);
+    transition: .4s;
+}
+.about {
+    display: grid;
+    grid-template-columns: repeat(2, 2fr);
+    grid-gap: 1.5rem;
+    align-items: center;
+}
+.about-img img {
+    max-width: 100%;
+    width: 480px;
+    height: auto;
+}
+.about-text span {
+ color: var(--main-color);
+ font-weight: 600;
+}
+.about-text h2 {
+font-size: var(--h2-font);
+}
+.about-text p {
+    margin: 0.8rem 0 1.8rem;
+    line-height: 1.7;
+}
+.heading {
+    text-align: center;
+}
+.heading span {
+    color: var(--main-color);
+    font-weight: 600;
+}
+.heading h2 {
+font-size: var(--h2-font);
+}
+.menu-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, auto));
+    grid-gap: 1.5rem;
+    align-items: center;
 }
